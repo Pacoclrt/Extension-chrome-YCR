@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "7Speaking Auto Solver HUD",
+  "version": "2.0",
+  "description": "Interface de contrôle et automatisation rapide pour 7Speaking.",
+  "permissions": [],
+  "host_permissions": [
+    "https://user.7speaking.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://user.7speaking.com/*"],
+      "js": ["injector.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
